@@ -1,2 +1,0 @@
-# guptapavitra.github.io
-MyWebsite
