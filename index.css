@@ -128,10 +128,6 @@ body {
     background-color: #eeeeee;
 }
 
-.tile-icon {
-    margin: 2rem 0 0 0;
-}
-
 .tile-icon .fa {
     margin: 1rem;
     font-size: 4rem;
@@ -144,7 +140,15 @@ body {
 }
 
 .tile-desc {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    line-height: 1.8;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #93a4ab;
+}
+
+.row.horizontal-card {
+    margin: 4rem 0;
 }
 
 
