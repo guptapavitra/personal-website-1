@@ -124,7 +124,6 @@ body {
 
 .section-3 {
     text-align: center;
-    height: 80vh;
     background-color: #eeeeee;
 }
 
@@ -147,9 +146,48 @@ body {
     color: #93a4ab;
 }
 
-.row.horizontal-card {
+.row.horizontal-cards {
     margin: 4rem 0;
+}
+
+.overflow-fix {
+    overflow: auto;
 }
 
 
 /*Section 3 ends*/
+
+
+/*Section footer starts*/
+
+.section-footer {
+    background-color: #2a3a3f;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 0.875rem;
+    margin: 2rem;
+}
+
+.logos {
+    margin: 0.75rem;
+}
+
+.logos .fa {
+    background: rgb(38, 52, 57);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.logos .fa:before {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
+
+
+/*Section footer ends*/
