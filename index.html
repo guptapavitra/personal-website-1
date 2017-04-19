@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <!--Custom Styles-->
     <link rel="stylesheet" href="index.css">
+    <!--Custom Javascript-->
+    <script src="index.js"></script>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -26,8 +28,8 @@
             <div class="hello">
                 UI/UX developer.
             </div>
-            <div class="">
-                <button class="button big-button">Contact me</button>
+            <div class="main-button">
+                <a class="button big-button" href="#section-5">Contact me</a>
             </div>
         </div>
         <div class="next-section-indicator">
@@ -135,7 +137,7 @@
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="file-title">
-                        Dashboard
+                        E-commerce
                     </div>
                     <div class="file-desc">
                         Dashboard for your basic needs. Incorporate charts, a beautiful sidebar and a fine color combination of black and white.
@@ -144,6 +146,37 @@
                         <span class="tag">dashboard</span>
                         <span class="tag">charts</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-5" id="section-5">
+        <div class="section-title">
+            Contact Me
+        </div>
+        <div class="section-desc">
+            The file is not big. But whatever it is, I try to keep it up to standards.
+        </div>
+        <div class="container overflow-fix">
+            <div class="row row-margin-top-bottom">
+                <div class="col-xs-12 col-md-6">
+                    <input type="text" class="form-control yellow margin-half" placeholder="First Name">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <input type="text" class="form-control yellow margin-half" placeholder="Last Name">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <input type="text" class="form-control yellow margin-half" placeholder="Email">
+
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <input type="number" class="form-control yellow margin-half" placeholder="Contact Number">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <textarea class="form-control yellow" cols="30" rows="3" placeholder="Message"></textarea>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <button class="btn btn-success full yellow">Message me</button>
                 </div>
             </div>
         </div>
