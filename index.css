@@ -12,6 +12,10 @@ body {
     }
 }
 
+.section {
+    position: relative;
+}
+
 
 /*Application Level Styles ends*/
 
@@ -47,7 +51,7 @@ body {
 }
 
 .main-button {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .button {
@@ -83,12 +87,18 @@ body {
     left: 50%;
     font-size: 0.875rem;
     transform: translateX(-50%);
-    animation: example 2s linear 5 alternate;
+    animation: example 2s linear infinite alternate;
 }
 
 .next-section-indicator i {
     color: white;
     transition: 0.6s all ease;
+    font-size: 2rem;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block !important;
 }
 
 .next-section-indicator i:hover {
@@ -176,11 +186,16 @@ body {
 }
 
 .row.horizontal-cards {
-    margin: 4rem 0;
+    margin: 4rem 0 8rem 0;
 }
 
 .overflow-fix {
     overflow: auto;
+}
+
+.fa-caret-down.yellow {
+    color: #fdcd3b;
+    border-color: #fdcd3b;
 }
 
 
@@ -189,11 +204,13 @@ body {
 
 /*Section 4 starts*/
 
-.section-4 {
+.section-4,
+.section-4-1 {
     text-align: center;
 }
 
-.section-4 img {
+.section-4 img,
+.section-4-1 img {
     width: 100%;
 }
 
@@ -224,12 +241,12 @@ body {
 }
 
 .row-margin-top-bottom {
-    margin: 4rem 0
+    margin: 8rem 0;
 }
 
 .section-4 .col-xs-12,
 .section-4 .col-md-6 {
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .separator {
@@ -305,6 +322,7 @@ body {
 
 .logos .fa {
     background: rgb(38, 52, 57);
+    color: rgba(255, 255, 255, 0.6);
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -322,6 +340,10 @@ body {
     background: black;
     color: white;
     cursor: pointer;
+}
+
+span.yellow {
+    color: rgba(253, 205, 53, 1)
 }
 
 
