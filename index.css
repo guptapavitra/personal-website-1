@@ -1,6 +1,19 @@
+/*Application Level Styles starts*/
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (min-width: 1200px) {
+    .container {
+        /* width: 1140px; */
+        width: 900px;
+        max-width: 100%;
+    }
+}
+
+
+/*Application Level Styles ends*/
 
 
 /*Section 1 starts*/
@@ -38,7 +51,7 @@ body {
     margin: 1rem;
     font-size: 0.875rem;
     border: 0;
-    border-radius: 3rem;
+    border-radius: 5px;
     text-transform: uppercase;
     color: white;
     background: transparent;
@@ -53,7 +66,6 @@ body {
     outline: 0;
     background: #FDCD3B;
     color: black;
-    padding: 0.875rem 3.1rem;
 }
 
 .next-section-indicator {
@@ -65,6 +77,16 @@ body {
     font-size: 0.875rem;
     transform: translateX(-50%);
     animation: example 2s linear 5 alternate;
+}
+
+.next-section-indicator i {
+    color: white;
+    transition: 0.6s all ease;
+}
+
+.next-section-indicator i:hover {
+    color: #fdcd3b;
+    border-color: #fdcd3b;
 }
 
 .fa-caret-down:before {
@@ -156,6 +178,52 @@ body {
 
 
 /*Section 3 ends*/
+
+
+/*Section 4 starts*/
+
+.section-4 {
+    text-align: center;
+}
+
+.section-4 img {
+    width: 100%;
+}
+
+.file-title {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.file-desc {
+    font-weight: 400;
+    text-align: left;
+}
+
+.file-tags {
+    text-align: left;
+}
+
+.file-tags .tag {
+    background: #fdcd3b;
+    border-radius: 5px;
+    color: black;
+}
+
+.row-margin-top-bottom {
+    margin: 4rem 0
+}
+
+.separator {
+    margin: 0 auto;
+    background: url(assets/separator.png);
+    height: 9px;
+    width: 576px;
+}
+
+
+/*Section 4 ends*/
 
 
 /*Section footer starts*/
