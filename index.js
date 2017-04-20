@@ -20,7 +20,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(window).bind('scroll', function() {
         var distance = $('.section-1').height();
-        if ($(window).scrollTop() > distance) {
+        if ($(window).scrollTop() >= distance) {
             $('nav').addClass('scrolled');
             $('.section-header').addClass('scrolled');
         } else {

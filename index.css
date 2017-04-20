@@ -31,15 +31,26 @@
     list-style-type: none;
     margin-bottom: 0;
     border-top: 1px solid white;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .section-header ul li {
     cursor: pointer;
-    color: white;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.875rem;
     padding: 0rem 1rem;
+}
+
+.section-header ul li a,
+.section-header ul li a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.section-header ul li a:hover,
+.section-header ul li a:focus {
+    color: #fdcd3b;
+    text-decoration: none;
 }
 
 .section-header.scrolled ul {
@@ -159,7 +170,8 @@ body {
     display: block !important;
 }
 
-.next-section-indicator i:hover {
+.next-section-indicator i:hover,
+.next-section-indicator i:focus {
     color: #fdcd3b;
     border-color: #fdcd3b;
 }
