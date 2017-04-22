@@ -6,67 +6,62 @@
     }
 }
 
-.section-header {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    z-index: 12;
-    font-size: 1.4rem;
-    left: 0;
-    font-weight: 300;
-    right: 0;
-    justify-content: center;
-    bottom: 20px;
-    transition: all 0.6s ease;
-}
-
-.section-header.scrolled {
-    display: flex;
-    position: fixed;
-    z-index: 12;
-    left: 0;
-    font-weight: 300;
-    right: 0;
-    justify-content: center;
-    top: 0;
-    bottom: initial;
-    background: #32353e;
-}
-
-.section-header ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    border-top: 1px solid white;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.section-header ul li {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.875rem;
-    padding: 0rem 1rem;
-}
-
-.section-header ul li a,
-.section-header ul li a:focus {
-    color: white;
-    text-decoration: none;
-}
-
-.section-header ul li a:hover,
-.section-header ul li a:focus {
-    color: #fdcd3b;
-    text-decoration: none;
-}
-
-.section-header.scrolled ul {
-    border-top-width: 0;
-}
-
-.section-header.scrolled ul li {
-    font-size: 0.875rem;
-    margin: 10px 0;
-    padding: 0 1rem;
+@media (min-width: 576px) {
+    .section-header {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        z-index: 12;
+        font-size: 1.4rem;
+        left: 0;
+        font-weight: 300;
+        right: 0;
+        justify-content: center;
+        bottom: 20px;
+        transition: all 0.6s ease;
+    }
+    .section-header.scrolled {
+        display: flex;
+        position: fixed;
+        z-index: 12;
+        left: 0;
+        font-weight: 300;
+        right: 0;
+        justify-content: center;
+        top: 0;
+        bottom: initial;
+        background: #32353e;
+    }
+    .section-header ul {
+        list-style-type: none;
+        margin-bottom: 0;
+        border-top: 1px solid white;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .section-header ul li {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0.875rem;
+        padding: 0rem 1rem;
+    }
+    .section-header ul li a,
+    .section-header ul li a:focus {
+        color: white;
+        text-decoration: none;
+    }
+    .section-header ul li a:hover,
+    .section-header ul li a:focus {
+        color: #fdcd3b;
+        text-decoration: none;
+    }
+    .section-header.scrolled ul {
+        border-top-width: 0;
+    }
+    .section-header.scrolled ul li {
+        font-size: 0.875rem;
+        margin: 10px 0;
+        padding: 0 1rem;
+    }
 }
 
 
