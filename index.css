@@ -1,5 +1,11 @@
 /*Section Header starts*/
 
+@media (max-width: 575px) {
+    .section-header {
+        display: none;
+    }
+}
+
 .section-header {
     display: flex;
     position: absolute;
@@ -216,7 +222,7 @@ body {
 .section .section-title {
     font-size: 2rem;
     font-weight: 600;
-    padding: 4rem 0 1rem 0;
+    padding: 8rem 0 1rem 0;
     margin: 0 auto;
 }
 
