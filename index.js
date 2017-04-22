@@ -38,4 +38,23 @@ $(document).ready(function() {
     $("#mobile-close-menu-icon").click(function() {
         $(".section-header").removeClass("open");
     });
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        $(".section-header").removeClass("open");
+    });
+
+    // Remove top navbar while scrolling down
+    // and
+    // Apply top navbar while scrolling up
+
+    var lastScrollTop = 0;
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            $(".section-header").addClass("hidden"); // downscroll code
+        } else {
+            $(".section-header").removeClass("hidden"); // upscroll code
+        }
+        lastScrollTop = st;
+    });
 });
