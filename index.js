@@ -29,3 +29,13 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $("#mobile-menu-icon").click(function() {
+        $(".section-header").addClass("open");
+    });
+
+    $("#mobile-close-menu-icon").click(function() {
+        $(".section-header").removeClass("open");
+    });
+});
