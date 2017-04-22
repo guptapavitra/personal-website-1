@@ -323,7 +323,8 @@ body {
     line-height: 1.8;
     font-size: 0.875rem;
     font-weight: 300;
-    color: #93a4ab;
+    /*color: #93a4ab;*/
+    color: #464f52;
 }
 
 .row.horizontal-cards {
@@ -358,27 +359,39 @@ body {
 .file-title {
     font-size: 2rem;
     font-weight: 300;
-    text-align: left;
     margin-bottom: 1rem;
 }
 
 .file-desc {
-    text-align: left;
     margin-bottom: 1rem;
     line-height: 1.8;
     font-size: 0.875rem;
     font-weight: 300;
-    color: #93a4ab;
+    /*color: #93a4ab;*/
+    color: #464f52;
 }
 
-.file-tags {
-    text-align: left;
+@media (max-width: 767px) {
+    .file-title,
+    .file-desc,
+    .file-tags {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .file-title,
+    .file-desc,
+    .file-tags {
+        text-align: left;
+    }
 }
 
 .file-tags .tag {
     background: #fdcd3b;
     border-radius: 5px;
     color: black;
+    padding: 2px 5px;
 }
 
 .row-margin-top-bottom {

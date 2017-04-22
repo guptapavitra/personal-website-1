@@ -1,6 +1,6 @@
-// Smooth Scrolling on click of in-page href
-
 $(document).ready(function() {
+    // Smooth Scrolling on click of in-page href
+
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -13,11 +13,11 @@ $(document).ready(function() {
             }
         }
     });
-});
 
-// Navbar dynamic positioning in the page
+    // For desktop:
+    // Adding class scrolled to section-header
+    // when scroll crosses section-1
 
-$(document).ready(function() {
     $(window).bind('scroll', function() {
         var distance = $('.section-1').height();
         if ($(window).scrollTop() >= distance) {
@@ -28,16 +28,21 @@ $(document).ready(function() {
             $('.section-header').removeClass('scrolled');
         }
     });
-});
 
-$(document).ready(function() {
+    // Adding class 'open' to section-header
+
     $("#mobile-menu-icon").click(function() {
         $(".section-header").addClass("open");
     });
 
+    // Removing class 'open' from section-header
+
     $("#mobile-close-menu-icon").click(function() {
         $(".section-header").removeClass("open");
     });
+
+    // Removing class 'open' from section-header
+    // when a link in section-header is clicked
 
     $('a[href*="#"]:not([href="#"])').click(function() {
         $(".section-header").removeClass("open");
