@@ -2,7 +2,29 @@
 
 @media (max-width: 575px) {
     .section-header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        height: 2rem;
+        z-index: 12;
+        font-weight: 300;
+        justify-content: center;
+        transition: all 0.6s ease;
+    }
+    .section-header ul {
+        list-style-type: none;
         display: none;
+    }
+    .section-header a .fa.fa-bars {
+        color: white;
+        font-size: 1.4rem;
+        background: black;
+        padding: 1rem 1rem 1rem 1rem;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
     }
 }
 
@@ -19,6 +41,9 @@
         justify-content: center;
         bottom: 20px;
         transition: all 0.6s ease;
+    }
+    .section-header a.only-mobile {
+        display: none;
     }
     .section-header.scrolled {
         display: flex;
@@ -92,6 +117,23 @@ body {
 
 /*Section 1 starts*/
 
+.section-1 .hello {
+    color: white;
+    font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    .section-1 .hello {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .section-1 .hello {
+        font-size: 2.8rem;
+    }
+}
+
 .section-1 {
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url("https://www.speakinginbytes.com/wp-content/uploads/2014/05/macbook-air.jpg");
@@ -112,12 +154,6 @@ body {
     max-height: 100%;
     overflow: auto;
     text-align: center;
-}
-
-.section-1 .hello {
-    color: white;
-    font-weight: 700;
-    font-size: 2.8rem;
 }
 
 .main-button {
@@ -320,11 +356,19 @@ body {
     padding: 0 30px;
 }
 
-.separator {
-    margin: 0 auto;
-    background: url(assets/separator.png);
-    height: 9px;
-    width: 576px;
+@media (max-width: 575px) {
+    .separator {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .separator {
+        margin: 0 auto;
+        background: url(assets/separator.png);
+        height: 9px;
+        width: 576px;
+    }
 }
 
 
