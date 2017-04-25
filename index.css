@@ -429,6 +429,17 @@ body {
     background-color: #eeeeee;
 }
 
+.section-5 .mail a,
+.section-5 .mobile-number {
+    font-size: 2rem;
+    color: rgba(253, 205, 53, 1);
+    text-decoration: none;
+}
+
+.margin-2 {
+    margin-bottom: 2rem;
+}
+
 .form-control.yellow:focus {
     border-color: #fdcd3b;
     border-width: 2px;
